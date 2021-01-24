@@ -26,6 +26,10 @@
         display: none;
     }
 
+    #humberger-icon {
+        display: block;
+    }
+
     /* open-btn */
     .open-menu {
         position: relative;
