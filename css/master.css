@@ -43,8 +43,12 @@ header {
 
 #header-list li {
   float: left;
-  padding: 30px;
   font-size: 16px;
+}
+
+#header-list li a {
+  display: block;
+  padding: 30px;
 }
 
 #header-list li:hover, #header-list li a:hover {
