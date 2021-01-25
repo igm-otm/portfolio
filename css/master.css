@@ -3,7 +3,7 @@ a {text-decoration: none;}
 /* ********************** */
 /*        font定義        */
 /* ********************** */
-h1, h2 {color: #000;}
+h1, h2, li, a {color: #000;}
 h3, h4, label, p, span {color: #7a7a7a;}
 h1, label {font-weight: bold;}
 h1 {font-size: 40px;}
@@ -36,9 +36,14 @@ header {
   align-items: center;
 }
 
-#header-title img {
-    height: 30px;
-    padding-left: 15px;
+#header-title a {
+  text-decoration: none;
+}
+
+#header-title a h1 {
+  line-height: 1;
+  padding-left: 15px;
+  font-family: 'Architects Daughter', cursive;
 }
 
 #header-list li {
