@@ -199,11 +199,11 @@
     }
 
     .works-list table th {
-        width: 33%;
+        width: 40%;
     }
 
     .works-list table td {
-        padding-left: 10px;
+        padding-left: 0px;
     }
 
     .works-copyright {
