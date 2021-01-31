@@ -112,19 +112,10 @@ header {
 /* ********************** */
 /*          page          */
 /* ********************** */
-.container1,
-.container2 {
+.container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 50px 15px 30px 15px;
-}
-
-.container1 {
-  border-left: 1px solid #7a7a7a;
-}
-
-.container2 {
-  border-right: 1px solid #7a7a7a;
 }
 
 #page {
@@ -155,7 +146,7 @@ header {
   padding-bottom: 20px;
 }
 
-.works-title1 h2 {
+.works-title h2 {
   /* font-family: 'Handlee', cursive; */
   margin-top: 30px;
   max-width: none;
@@ -163,30 +154,11 @@ header {
   position: relative;
 }
 
-.works-title1 h2:before {
+.works-title h2:before {
   position: absolute;
   bottom: 0px;
-  left: 0px;
-  width: 80%;
-  height: 1px;
-  content: '';
-  border-radius: 1px;
-  background-color: #000;
-}
-
-.works-title2 h2 {
-  /* font-family: 'Handlee', cursive; */
-  margin-top: 30px;
-  max-width: none;
-  padding: 80px 0 10px 0;
-  position: relative;
-}
-
-.works-title2 h2:before {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 80%;
+  left: calc(50% - 25px);
+  width: 50px;
   height: 1px;
   content: '';
   border-radius: 1px;
