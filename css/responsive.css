@@ -1,28 +1,44 @@
-@media (max-width: 670px) {
+@media (max-width: 700px) {
     
-    h1 {font-size: 28px;}
-    h2 {font-size: 22px;}
-    h3 {font-size: 18px;}
+    /* h1 {font-size: 25px;}
+    h2 {font-size: 16px;}
+    h3 {font-size: 15px;}
     h4 {font-size: 14px;}
-    p {font-size: 14px; line-height: 1.5em;}
+    label {font-size: 14px; display: block; margin: 10px 0 5px 0;}
+    p, li {font-size: 12px; line-height: 1.5em;} */
     
     /* ********************** */
     /*         header         */
     /* ********************** */
     header {
-        padding: 15px 20px;
+        padding: 15px;
+        width: 100%;
+        height: auto;
+        background-color: rgb(239, 239, 240, 0.9)
+    }
+
+    #header-inner {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        height: auto;
     }
 
     #header-title a h1 {
-        padding-left: 0;
+        padding: 0;
+        color: #444;
     }
 
-    #header-list {
+    #header-menu {
         display: none;
     }
 
     #humberger-icon {
         display: block;
+    }
+
+    #header-inner .sns-btn {
+        display: none;
     }
 
     /* open-btn */
@@ -72,7 +88,7 @@
         height: 2px;
         width: 30px;
         border-radius: 2px;
-        background-color: #7a7a7a;
+        background-color: #000;
         transition: .3s;
     }
 
@@ -93,45 +109,22 @@
     /* ********************** */
     /*          page          */
     /* ********************** */
-    .container1,
-    .container2 {
-        padding: 0px 15px;
+    .container {
+        padding-bottom: 25px;
     }
 
-    .container1 {
-        border-left: 0px
-    }
-      
-    .container2 {
-        border-right: 0px;
+    .container:first-child {
+        padding-top: 50px;
     }
 
     #page {
-        padding-top: 100px;
+        height: auto;
     }
 
-    .head-content {
-        padding-left: 0;
-    }
-
-    #home-profile {
-        display: block;
+    #page-scroll {
         width: 100%;
-        margin: 0 auto;
-        padding-top: 40px;
-    }
-
-    .photo-img {
-        padding-bottom: 20px;
-        margin: 0 auto;
-    }
-
-    .photo-img img {
-        width: 80px;
-    }
-
-    .head-content {
-        text-align: center;
+        top: 0;
+        left: 0;
     }
 
     .sns-icon .fab,
@@ -139,126 +132,95 @@
       padding: 20px;
     }
 
-    .works-title1 h2,
-    .works-title2 h2 {
-        margin: 0 auto 30px auto;
+    /* works */
+    .works,
+    .about {
+        flex-direction: column;
+        height: auto;
     }
 
-    .works-title2 h2 {
-        padding: 40px 0 10px 0;
-    }
-
-    .works {
-        display: block;
-        margin-top: 20px;
+    .container-title {
+        margin: 20px 0 30px 0;
     }
 
     .discription-txt {
         padding-bottom: 15px;
     }
 
-    .works-sns-icon {
-        margin: 30px 0 0 25px;
-        display: flex;
-        align-items: center;
-    }
-      
-    .works-sns-icon .fab {
-        margin-right: 8px;
-        font-size: 1.5em;
+    .img-content,
+    .section {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex: auto;
+        justify-content: space-around;
     }
 
-    .work-content {
+    .works-txt,
+    .img-content {
+        padding: 25px 20px;
         width: 100%;
-        padding-top: 0px;
     }
 
-    .works-txt {
-        border-left: 0px;
-        width: 100%;
-        padding: 40px 0;
+    .work-img,
+    .work-img-sp,
+    .work-img-sp2 {
+        padding: 0px;
     }
 
     .work-img {
-        padding: 15px 10px;
+        height: 130px;
     }
 
-    .works-list table {
-        padding: 15px;
+    .work-img-sp {
+        height: 200px;
+    }
+    
+    .work-img-sp2 {
+        height: 90px;
     }
 
-    .works-list table th,
-    .works-list table td {
-        line-height: 1.6em;
-        font-size: 14px;
-    }
-
-    .works-list table th {
-        width: 40%;
-    }
-
-    .works-list table td {
-        padding-left: 0px;
+    .works-list {
+        padding: 0 0 20px 0;
     }
 
     .works-copyright {
-        font-size: 6px;
+        font-size: 5px;
+        line-height: 1.2;
+        padding: 0px;
     }
 
     .discription-txt {
         text-align: left;
     }
-
-    .gallery-content {
+    
+    /* ********************** */
+    /*          slick         */
+    /* ********************** */
+    .section {
         width: 100%;
-        padding-top: 0px;
-        align-items: center;
-        /* position: relative; */
-      }
-      
-    .gallery-img {
-        width: 100%;
-        padding: 20px 40px;
-        /* position: absolute; */
-        float: left;
     }
 
-    /* aboutページ */
-    .about-content1 {
-        height: 500px;
-        background-position: center;
-    }
-    
-    .about-content2 {
-        height: 450px;
-    }
-    
-    .about-content3 {
-        height: 450px;
-        background-position: center;
-    }
-    .about-content1 .about-txt {
-        padding: 150px  20px 130px 20px;
+    .img-slider-area {
+        padding: 0 25px;
     }
 
-    .about-content2 .about-txt,
-    .about-content3 .about-txt {
-        padding: 150px  30px;
-        text-align: center;
-    }
-    
-    .about-txt h2 {
-        font-size: 50px;
-        margin-bottom: 15px;
-        font-weight: normal;
-    }
-    
-    .about-txt p {
-        font-size: 18px;
+    .slick-prev,
+    .slick-next,
+    .slick-prev:before,
+    .slick-next:before {
+        display: none;
     }
 
-    /* footer */
+    .slick-slide img {
+        width: auto;
+        height: 160px;
+    }
+
+    /* ********************** */
+    /*         footer         */
+    /* ********************** */
     footer .sns-btn {
-        margin-top: 40px;
+        display: block;
+        margin: 40px auto 20px auto;
     }
 }

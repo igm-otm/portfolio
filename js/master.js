@@ -1,7 +1,17 @@
+$(document).on('ready', function() {
+    $(".variable-screen").slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: false,
+      infinite: true,
+      variableWidth: true,
+      centerMode: true,
+    });
+});
+
 // メニューモーダル・ボタン表示切り替え
 var isOpen = false;
 document.getElementById('humberger-icon').addEventListener('click', function() {
-    console.log('1234567890');
     var menu = document.getElementById('header-mordal');
 
     if (isOpen) {
@@ -14,9 +24,3 @@ document.getElementById('humberger-icon').addEventListener('click', function() {
     
     this.classList.toggle('close-menu');
 }, false);
-
-
-// 画面サイズの取得
-getScreenSize()
-
-// スワイプ表示

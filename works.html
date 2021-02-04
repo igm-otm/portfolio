@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PORTFOLIO | works</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Handlee&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -18,28 +19,32 @@
     <header>
         <div id="header-inner">
             <div id="header-title">
-                <a href="index.html"><h1>PORTFOLIO</h1></a>
+                <a href="index.html"><h1>R's PORTFOLIO</h1></a>
             </div>
             <div id="header-menu">
                 <ul id="header-list">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="works.html">works</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#about">about</a></li>
                     <li><a href="mailto:rika.igami.work@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">contact</a></li>
                 </ul>
+
             </div>
 
             <div id="humberger-icon" class="open-menu"></div>
             
+            <div class="sns-btn">
+                <a class="sns-icon" href="https://www.facebook.com/rika.igami/"><span class="fab fa-facebook fa-2x"></span></a>
+                <a class="sns-icon" href="mailto:rika.igami.work@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"><span class="fas fa-envelope fa-2x"></span></a>
+            </div>
         </div>
-        
     </header>
 
     <div id="header-mordal">
         <nav>
             <ul id="header-nav-list">
-                <li><a href="about.html">about</a></li>
-                <li><a href="works.html">works</a></li>
-                <li><a href="mailto:rika.igami.work@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">contact</a></li>
+                <li><a class="header-menu-btn" href="#works">works</a></li>
+                <li><a class="header-menu-btn" href="#about">about</a></li>
+                <li><a class="header-menu-btn" href="mailto:rika.igami.work@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">contact</a></li>
             </ul>
             <div class="sns-btn">
                 <a class="sns-icon" href="https://www.facebook.com/rika.igami/"><span class="fab fa-facebook fa-2x"></span></a>
@@ -49,109 +54,213 @@
     </div>
 
     <div id="page">
-        <div class="works-title1">
-            <h2>projects</h2>
-        </div>
-        <div class="container1">
-            <p class="discription-txt">約5年間にわたってゲーム業界をメインに、PC/モバイルサービスのプロジェクトに参画してきました。</p>
-            <div class="works">
-                <div class="work-content">
-                    <div class="work-img">
-                        <img src="./img/logo_pokecolo.png" alt="ポケコロ">
+        <div id="page-scroll">
+
+            <div class="container bg-gray" id="works">
+                <!-- <p class="discription-txt">約5年間にわたってゲーム業界をメインに、PC/モバイルサービスのプロジェクトに参画してきました。</p> -->
+                <div class="works">
+                    <div class="works-txt">
+                        <div class="container-title">
+                            <h2>cocone株式会社</h2>
+                        </div>
+                        <div class="works-list">
+                            <label>担当</label>
+                            <p>カスタマーサポートマネージャー　企画運営<br>
+                                HTMLメールコーディング / バナー制作 / 仕様設計･改修 / Webページ更新 / SNS運用管理責任者 / コミュニケーションマネージャー</p>
+                            <label>product</label>
+                            <p>カスタマーサポート：ポケコロ / ディズニーマイリトルドール / サンリオハロースイートデイズ / 猫のニャッホ<br>
+                                企画運営：ポケコロ</p>
+                            <label>platform</label>
+                            <p>AppStore / GooglePlay / au Market</p>
+                        </div>
+                        <p class="works-copyright">©cocone</p>
                     </div>
-                    <div class="work-img">
-                        <img src="./img/logo_niagho.png" alt="猫のニャッホ">
-                    </div>
-                    <div class="work-img">
-                        <img src="./img/logo_nouen.png" alt="農園ホッコリーナ">
-                    </div>
-                    <div class="work-img">
-                        <img src="./img/logo_dmmgames.png" alt="DMM GAMES">
-                    </div>
-                    <div class="work-img">
-                        <p class="works-copyright">©cocone | Copyright©2021 DeNA Co.,Ltd. Allrights reserved. | Copyright © since 1998 DMM All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="works-txt">
-                    <div class="works-list">
-                        <table>
-                            <tr>
-                                <th>2020.12 - 2021.1</th>
-                                <td>共済保険オンライン加入</br>Webデザイナー/フロントエンド</td>
-                            </tr>
-                            <tr>
-                                <th>2020.6 - 2020.11</th>
-                                <td>DMM GAMESプラットフォーム<br>Webディレクター</td>
-                            </tr>
-                            <tr>
-                                <th>2020.2 - 2020.5</th>
-                                <td>農園ホッコリーナ<br>プランナー</td>
-                            </tr>
-                            <tr>
-                                <th>2016.4 - 2019.8</th>
-                                <td>ポケコロ　猫のニャッホ　等<br>CS/運営/SNSバナー制作</td>
-                            </tr>
-                        </table>
+                    <div class="img-content">
+                        <img class="work-img-sp" src="./img/pokecolo.png" alt="ポケコロ">
+                        <img class="work-img-sp2" src="./img/niagho.png" alt="猫のニャッホ">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="works-title2">
-            <h2>gallery</h2>
-        </div>
-        <div class="container2">
-            <!-- gallery -->
-            <p class="discription-txt">ポケコロ参画時は、公式Twitter・LINE公式アカウントの管理者としてSNS企画・運用・バナー制作を一貫して担当してました。</p>
-            <div class="works">
-                <div class="works-sns-icon">
-                    <span class="fab fa-twitter"></span><h3>Twitter</h3>
-                </div>
-                <div class="gallery-content">
-                    <div class="gallery-img">
-                        <img src="./img/gallery4.png" alt="">
+
+            <div class="container">
+                <!-- <p class="discription-txt">約5年間にわたってゲーム業界をメインに、PC/モバイルサービスのプロジェクトに参画してきました。</p> -->
+                <div class="works">
+                    <div class="works-txt">
+                        <div class="container-title">
+                            <h2>株式会社DeNA Games Tokyo</h2>
+                        </div>
+                        <div class="works-list">
+                            <label>担当業務</label>
+                            <p>プランナー<br>
+                                企画立案 / 仕様設計 / パラメータ設計 / イベントデータ登録 / 開発進行管理 / 数値分析</p>
+                            <label>product</label>
+                            <p>農園ホッコリーナ</p>
+                            <label >platform</label>
+                            <p>mobage (SPブラウザ)</p>
+                        </div>
+                        <p class="works-copyright">Copyright © since 1998 DMM All Rights Reserved.</p>
                     </div>
-                    <div class="gallery-img">
-                        <img src="./img/gallery5.png" alt="">
-                    </div>
-                    <div class="gallery-img">
-                        <img src="./img/gallery6.png" alt="">
-                    </div>
-                    <div class="gallery-img">
-                        <img src="./img/gallery7.png" alt="">
-                    </div>
-                </div>
-                <div class="works-sns-icon">
-                    <span class="fab fa-line"></span><h3>LINE</h3>
-                </div>
-                <div class="gallery-content">
-                    <div class="gallery-img">
-                        <img src="./img/gallery1.png" alt="">
-                    </div>
-                    <div class="gallery-img">
-                        <img src="./img/gallery2.png" alt="">
-                    </div>
-                    <div class="gallery-img">
-                        <img src="./img/gallery3.png" alt="">
-                    </div>
-                    <div class="gallery-img">
-                        <img src="./img/gallery8.png" alt="">
+                    <div class="img-content">
+                        <img class="work-img-sp" src="./img/mobage-sp.png" alt="mobage">
+                        <img class="work-img-sp" src="./img/nouen-sp.png" alt="農園ホッコリーナ">
                     </div>
                 </div>
             </div>
+
+            <div class="container bg-gray">
+                <!-- <p class="discription-txt">約5年間にわたってゲーム業界をメインに、PC/モバイルサービスのプロジェクトに参画してきました。</p> -->
+                <div class="about">
+                    <div class="works-txt">
+                        <div class="container-title">
+                            <h2>合同会社EXNOA</h2>
+                        </div>
+                        <div class="works-list">
+                            <label>担当</label>
+                            <p>Webディレクター<br>
+                                プロジェクト進行管理 / バナー制作 / コンバージョン･売上レポート分析･作成</p>
+                            <label>product</label>
+                            <p>DMM GAMES / FANZA GAMES プラットフォームマーケティング</p>
+                            <label>platform</label>
+                            <p>DMM GAMES / FANZA GAMES プラットフォーム (PC･SPブラウザ)<br>AppStore / GooglePlay</p>
+                        </div>
+                        <p class="works-copyright">Copyright © since 1998 DMM All Rights Reserved.</p>
+                    </div>
+                    <div class="img-content">
+                        <img class="work-img" src="./img/dmm-pc.png" alt="初夏のDMM GAMES FESTIVAL">
+                        <img class="work-img" src="./img/dmm-sp.png" alt="初夏のDMM GAMES FESTIVAL">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container">
+                <!-- <p class="discription-txt">約5年間にわたってゲーム業界をメインに、PC/モバイルサービスのプロジェクトに参画してきました。</p> -->
+                <div class="works">
+                    <div class="works-txt">
+                        <div class="container-title">
+                            <h2>CO･OP共済</h2>
+                        </div>
+                        <div class="works-list">
+                            <p>CO･OP共済の保障加入のサイトです。COVID-19の流行を機に、これまで担当募集人とご契約者様が対面で行っていた加入申込を非対面で行えるようオンライン化改修を行ってます。<br>
+                            非対面でもご契約者様が手軽に加入申込ができるよう、情報整理から画面設計などのより一層ユーザービリティを意識した画面を制作してます。<br>
+                            ※現在開発中のため画面はイメージです</p>
+                            <label>担当業務</label>
+                            <p>Webデザイナー<br>
+                                プロトタイプ制作 / UI設計 / レスポンシブデザイン / マークアップ / コーディング</p>
+                            <label>product</label>
+                            <p>共済保険ソリューション (クライアントのWebサイト作成)</p>
+                            <label>言語</label>
+                            <p>HTML5 / CSS3 / jQuery (一部Javascript)</p>
+                        </div>
+                        <p class="works-copyright">Copyright © since 1998 DMM All Rights Reserved.</p>
+                    </div>
+                    <div class="img-content">
+                        <!-- <div class="work-img"> -->
+                            <img class="work-img" src="./img/coop-pc.png" alt="初夏のDMM GAMES FESTIVAL">
+                        <!-- </div> -->
+                        <!-- <div class="work-img"> -->
+                            <img class="work-img" src="./img/coop-sp.png" alt="初夏のDMM GAMES FESTIVAL">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container bg-gray">
+                <div class="works">
+                    <div class="works-txt">
+                        <div class="container-title">
+                            <h2>gallery</h2>
+                        </div>
+                        <div class="works-list">
+                            <p>TwitterやLINEをはじめとした公式SNSアカウントでの広告プロモーションにおいて、<br>
+                                広告･配信コンテンツ立案からバナー画像制作などや運用までを一気通貫して担当してました。<br>
+                                Twitterフォロワー数1万人増加、LINEを活用した施策でイベント売上増加などに貢献しました。</p>
+                            <label>制作ツール</label>
+                            <p>Adobe Photoshop / Adobe Illustrator</p>
+                            <!-- <div class="sns-icon">
+                                <span class="fab fa-twitter"></span><h3></h3>
+                            </div> -->
+                        </div>
+                        <p class="works-copyright">©cocone</p>
+                    </div>
+                    <div class="section">
+                        <div class="img-slider-area">
+                            <div class="variable-screen slider">
+                                <div><img src="./img/gallery1.png" alt=""></div>
+                                <div><img src="./img/gallery4.png" alt=""></div>
+                                <div><img src="./img/gallery2.png" alt=""></div>
+                                <div><img src="./img/gallery5.png" alt=""></div>
+                                <div><img src="./img/gallery3.png" alt=""></div>
+                                <div><img src="./img/gallery6.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="about">
+                <div class="works">
+                    <div class="works-txt">
+                        <div class="container-title">
+                            <h2>profile</h2>
+                            <img src="./img/photo-me.png" alt="">
+                        </div>
+                        <div class="works-list">
+                            <p>大阪府出身。<br>
+                                ゲーム業界をメインにCS・サービス運営・プランナーの職種を経て、昨年Webディレクター・デザイナーへ転身。<br>
+                                現在、CO･OP共済の某案件でWebデザイナーとして、プロトタイプ作成からUI設計・フロントコーディングを一気通貫して担当。<br>
+                                カスタマーサポートやプランナーなどの経験を活かしたUX・UI設計にクライアントから定評を得る。<br>
+                                Webデザイナーとしてはまだまだ駆け出しのため日々勉強中。<br>
+                                UXをはじめ運営･運用をも考慮した仕様設計が得意。</p>
+                        </div>
+                        <div class="container-title">
+                            <h2>hobby & favorite</h2>
+                        </div>
+                        <div class="works-list">
+                            <h4>クラシックバレエ鑑賞</h4>
+                            <p>約15年ほど踊ってましたが怪我で挫折して以降、今では鑑賞専門。
+                                最近はYoutubeでバレエを鑑賞する日々。</p>
+                        
+                            <h4>激辛料理</h4>
+                            <p>両親が韓国人なので幼い頃から辛いものには馴染みがあります。辛すぎてもう食べれない！という経験がまだないので、誰かおすすめの激辛料理を教えてほしい</p>
+                        
+                            <h4>ゲーム</h4>
+                            <p>IT業界に踏み入った理由のひとつが「ゲームが好きだから」でした。『Ghost of Tsushima』がここ一年内のお気に入りソフト。</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="img-slider-area">
+                            <div class="variable-screen slider">
+                                <div><img src="./img/about1.png" alt=""></div>
+                                <div><img src="./img/about2.png" alt=""></div>
+                                <div><img src="./img/about3.png" alt=""></div>
+                            </div>
+                            <!-- <div class="about-content1">
+                                    <p>I have been dancing ballet for 15 years from 3years old. <br>Now that I quit that because of an injury, <br>my hobby is watching that.</p>
+                            </div>
+                            <div class="about-content2">
+                                    <p>I'm a Japanese Korean. <br>I love spicy and hot foods.</p>
+                            </div>
+                            <div class="about-content3">
+                                    <p>One of the most interesting games <br>these days is "Ghost of Tsushima".</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="sns-btn">
+                    <a class="sns-icon" href="https://www.facebook.com/rika.igami/"><span class="fab fa-facebook fa-2x"></span></a>
+                    <a class="sns-icon" href="mailto:rika.igami.work@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"><span class="fas fa-envelope fa-2x"></span></a>
+                </div>
+                <div id="copyright">made by ♥ ©noranekomodoki</div>
+            </footer>
+
         </div>
     </div>
-
-    <footer>
-        <div class="sns-btn">
-            <a class="sns-icon" href="https://www.facebook.com/rika.igami/"><span class="fab fa-facebook fa-2x"></span></a>
-            <a class="sns-icon" href="mailto:rika.igami.work@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"><span class="fas fa-envelope fa-2x"></span></a>
-        </div>
-        <div id="copyright">©noranekomodoki</div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/master.js"></script>
 </body>
 
