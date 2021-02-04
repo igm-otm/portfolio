@@ -144,6 +144,7 @@ header {
   background-color: #7a7a7a;
 }
 
+<<<<<<< HEAD
 #header-mordal .sns-icon .fab,
 #header-mordal .sns-icon .fas {
   padding: 20px 30px 40px 30px;
@@ -156,6 +157,17 @@ header {
 /*          page          */
 /* ********************** */
 
+=======
+/* ********************** */
+/*          page          */
+/* ********************** */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 50px 15px 30px 15px;
+}
+
+>>>>>>> refs/remotes/origin/master
 #page {
   position: relative;
   text-align: center;
@@ -175,6 +187,7 @@ header {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .bg-gray {
   background-color: rgb(239, 239, 240);
 }
@@ -194,6 +207,25 @@ header {
 .container-title img {
   width: 50px;
   margin: 25px 15px 0 15px;
+=======
+.works-title h2 {
+  /* font-family: 'Handlee', cursive; */
+  margin-top: 30px;
+  max-width: none;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.works-title h2:before {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 1px;
+  content: '';
+  border-radius: 1px;
+  background-color: #000;
+>>>>>>> refs/remotes/origin/master
 }
 
 .works-txt,
@@ -374,4 +406,9 @@ footer .sns-btn {
 
 #copyright {
   font-size: 12px;
+<<<<<<< HEAD
 }
+=======
+  margin: 30px auto;
+}
+>>>>>>> refs/remotes/origin/master
