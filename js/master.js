@@ -1,5 +1,5 @@
 // 画像スライド
-$(document).on('ready', function() {
+$(function() {
     $(".variable-screen").slick({
       autoplay: true,
       autoplaySpeed: 5000,
@@ -8,6 +8,22 @@ $(document).on('ready', function() {
       variableWidth: true,
       centerMode: true,
     });
+
+    $(window).scroll(function (){
+        $("#about-gallery").each(function(){
+          var imgPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+
+          if (scroll > imgPos - windowHeight + windowHeight/5){
+            $(this).addClass("fade-on");
+          } else {
+            $(this).removeClass("fade-on");
+            }
+        });
+    
+    });
+        
 });
 
 // メニューモーダル・ボタン表示切り替え
