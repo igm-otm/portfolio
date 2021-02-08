@@ -1,3 +1,4 @@
+// 画像スライド
 $(document).on('ready', function() {
     $(".variable-screen").slick({
       autoplay: true,

@@ -4,7 +4,7 @@ a {text-decoration: none;}
 /*        font定義        */
 /* ********************** */
 h1, h2, li, a {color: #000;}
-h3, h4, label, li, p, span {color: #7a7a7a;}
+h3, h4, label, li, p, span {color: #4a4a4a;}
 h1, h2, h4, label {font-weight: bold;}
 h1 {font-size: 25px;}
 h2 {font-size: 16px;}
@@ -16,10 +16,6 @@ p, li {font-size: 12px; line-height: 1.6em;}
 /* ********************** */
 /*         header         */
 /* ********************** */
-body {
-  background-color: #fff;
-}
-
 header {
   background-color: #444;
   position: fixed;
@@ -69,10 +65,25 @@ header {
   color: rgb(239, 239, 240);
 }
 
-#header-list li:hover, 
-#header-list li a:hover {
+
+#header-list li a:hover,
+#header-list li a:active,
+#header-list li.current a {
   background: #ffaaaf;
-  cursor: pointer;
+}
+
+#header-list li.current a {
+  position: relative;
+}
+
+#header-list li.current a:before {
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 20px solid #ffaaaf;
+  content: '';
+  top: calc(50% - 18px);
+  position: absolute;
+  right: -18px;
 }
 
 .sns-icon .fab,
@@ -155,7 +166,6 @@ header {
 /* ********************** */
 /*          page          */
 /* ********************** */
-
 #page {
   position: relative;
   text-align: center;
@@ -187,13 +197,13 @@ header {
 
 .container-title h2 {
   /* font-family: 'Handlee', cursive; */
-  max-width: none;
-  margin-top: 20px;
+  margin-top: 15px;
+  padding-bottom: 10px;
 }
 
 .container-title img {
   width: 50px;
-  margin: 25px 15px 0 15px;
+  margin: 20px 15px;
 }
 
 .works-txt,
@@ -257,7 +267,7 @@ header {
 }
 
 .works-list {
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
 }
 
 .work-icon {
@@ -321,34 +331,52 @@ header {
 }
 /* end-slick */
 
-
-/* about */
-.about-content1 {
-  background-image: url("../img/about1.png");
+/* ********************** */
+/*      about-gallery     */
+/* ********************** */
+.img-bg {
+  background: url('../img/img-bg.png') no-repeat 100% 100% fixed;
+  -webkit-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  width: 200px;
-  height: 200px;
 }
 
-.about-content2 {
-  background-image: url("../img/about2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  width: 200px;
-  height: 200px;
+#about-gallery {
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 230px 230px 230px;
+  grid-template-rows: 230px 230px 230px;
 }
 
-.about-content3 {
-  background-image: url("../img/about3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  background-position: right;
-  width: 200px;
-  height: 200px;
+#about-gallery .grid-item1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#about-gallery .grid-item2 {
+  grid-row: 1 / 3;
+  grid-column: 2 / 4;
+}
+
+#about-gallery .grid-item3 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#about-gallery .grid-item4 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+
+#about-gallery .grid-item5 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+}
+
+#about-gallery img {
+	display: block;
+  height: 100%;
+  width: 100%;
 }
 
 /* ********************** */
