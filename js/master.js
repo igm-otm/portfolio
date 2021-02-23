@@ -1,4 +1,4 @@
-// 桜のアニメーション
+// 桜の背景エフェクト
 (function(d,b,w) {
 	var q = d.createElement('i');
 	q.id = "sakura";
@@ -114,6 +114,9 @@
 	var g = new Array();
 	var c = new Array();
 	var k = 0;
+	var w = window;
+	let defaultWidth = w.innerWidth - 10;
+	
 	d.addEventListener('scroll',function(){u = d.documentElement.scrollTop || b.scrollTop;},false);
 	for(var i=0;i<50;i++){
 		var m = d.createElement('div');
@@ -140,10 +143,14 @@
 				if((y[i]*2)<=c[i]){
 					c[i] = 0;
 				}
-			}else{
-				t[i] = u-40;
-				l[i] = Math.random()*w.innerWidth;
-			}
+			// レスポンシブ画面幅
+			} else {
+				t[i] = u - 40;
+				l[i] = Math.random() * defaultWidth;
+			  }
+			  if (l[i] > defaultWidth) {
+				l[i] = Math.random() * defaultWidth;
+			  }
 			if(k>=100 && k<=110){l[i] = l[i]+1;}
 			else if(k>=111 && k<=120){l[i] = l[i]+3;}
 			else if(k>=121 && k<=129){l[i] = l[i]+5;}

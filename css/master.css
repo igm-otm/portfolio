@@ -210,7 +210,7 @@ header {
 }
 
 .page-main-message {
-  padding: 70px;
+  padding: 150px 70px;
   position: relative;
   /* width: 50%; */
   margin: 0 auto;
@@ -227,7 +227,7 @@ header {
   height: 80px;
   position: absolute;
   right: calc(35%);
-  bottom: -10px;
+  bottom: 40px;
 }
 
 .container {
@@ -237,7 +237,8 @@ header {
 }
 
 .section-title {
-  padding: 80px 0 40px 50px;
+  margin-top: 150px;
+  padding: 40px 0 40px 50px;
   /* text-align: left; */
   display: flex;
   align-items: flex-end;
@@ -279,13 +280,6 @@ header {
 .about-txt {
   padding: 30px 20px 20px 50px;
   width: 45%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.gallery-txt {
-  width: 50%;
-  padding: 30px 20px 20px 50px;
   margin: 0 auto;
   text-align: left;
 }
@@ -520,6 +514,13 @@ header {
 
 .fade-on {
   opacity: 1;
+}
+
+.gallery-txt {
+  width: 50%;
+  padding: 30px 20px 20px 50px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .section {
