@@ -1,3 +1,74 @@
+$(function() {
+	// 画像スライド
+
+    // $(".page-slider-area").slick({
+    //   arrows: false,
+    //   autoplay: true,
+    //   autoplaySpeed: 10000,
+    //   infinite: true,
+    //   dots: false,
+    //   slidesToShow: 1,
+    //   pauseOnHover: false,
+    //   centerMode: true,
+    //   centerPadding: '0%',
+    //   responsive: [{
+    //       breakpoint: 1024,
+    //       settings: {
+    //           centerMode: false,
+    //       }
+    //   }]
+    // });  
+
+    $(".variable-screen").slick({
+      autoplay: true,
+      autoplaySpeed: 8000,
+      dots: false,
+      infinite: true,
+      variableWidth: true,
+      centerMode: true,
+	});
+
+	
+	
+	// ここからスクロールアニメーション************
+	// スクロールのオフセット値
+	var offsetY = -10;
+	// スクロールにかかる時間
+	var time = 500;
+	// ページ内リンクのみを取得
+	$('a').click(function() {
+		// 移動先となる要素を取得
+		var target = $(this.hash);
+		if (!target.length) return;
+		// 移動先となる値
+		var targetY = target.offset().top+offsetY;
+		// スクロールアニメーション
+		$('html,body').animate({scrollTop: targetY}, time, 'swing');
+		// ハッシュ書き換えとく
+		window.history.pushState(null, null, this.hash);
+		// デフォルトの処理はキャンセル
+		return false;
+	});
+
+});
+
+// メニューモーダル・ボタン表示切り替え
+var isOpen = false;
+var menu = document.getElementById('header-mordal');
+document.getElementById('humberger-icon').addEventListener('click', function() {
+
+    if (isOpen) {
+        isOpen = false;
+        menu.style.right = "-100%";
+    } else {
+        isOpen = true;
+        menu.style.right = "0";
+    }
+    
+    this.classList.toggle('close-menu');
+}, false);
+
+
 // 桜の背景エフェクト
 (function(d,b,w) {
 	var q = d.createElement('i');
@@ -186,87 +257,3 @@
 		/* console.log(k); */
 	},45);
 })(window.document,window.document.body,window);
-
-
-// 画像スライド
-$(function() {
-    $(".page-slider-area").slick({
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 10000,
-      infinite: true,
-      dots: false,
-      slidesToShow: 1,
-      pauseOnHover: false,
-      centerMode: true,
-      centerPadding: '0%',
-      // responsive: [{
-      //     breakpoint: 1024,
-      //     settings: {
-      //         centerMode: false,
-      //     }
-      // }]
-    });  
-
-    $(".variable-screen").slick({
-      autoplay: true,
-      autoplaySpeed: 10000,
-      dots: false,
-      infinite: true,
-      variableWidth: true,
-      centerMode: true,
-    });
-
-});
-
-$(function() {
-	// 可視範囲でフェードイン
-    $(window).scroll(function() {
-        $("#about-gallery").each(function() {
-          var imgPos = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-
-          if (scroll > imgPos - windowHeight + windowHeight/5){
-            $(this).addClass("fade-on");
-            }
-        });
-    });
-});
-
-
-// ここからスクロールアニメーション************
-// スクロールのオフセット値
-var offsetY = -10;
-// スクロールにかかる時間
-var time = 500;
-// ページ内リンクのみを取得
-$('a[href^=#]').click(function() {
-  // 移動先となる要素を取得
-  var target = $(this.hash);
-  if (!target.length) return ;
-  // 移動先となる値
-  var targetY = target.offset().top+offsetY;
-  // スクロールアニメーション
-  $('html,body').animate({scrollTop: targetY}, time, 'swing');
-  // ハッシュ書き換えとく
-  window.history.pushState(null, null, this.hash);
-  // デフォルトの処理はキャンセル
-  return false;
-});
-
-// メニューモーダル・ボタン表示切り替え
-var isOpen = false;
-document.getElementById('humberger-icon').addEventListener('click', function() {
-    var menu = document.getElementById('header-mordal');
-
-    if (isOpen) {
-        isOpen = false;
-        menu.style.right = "-100%";
-    } else {
-        isOpen = true;
-        menu.style.right = "0";
-    }
-    
-    this.classList.toggle('close-menu');
-}, false);

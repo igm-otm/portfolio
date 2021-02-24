@@ -12,7 +12,7 @@ h2, h3, h4, label {font-weight: bold;}
 h1 {font-size: 25px;}
 h2 {font-size: 18px;}
 h3 {font-size: 15px;}
-h4 {font-size: 14px; margin: 15px 0 5px 0;}
+h4 {font-size: 14px;}
 label {font-size: 12px; display: block; margin: 15px 0 5px 0;}
 p, li {font-size: 12px; line-height: 1.6em;}
 
@@ -137,9 +137,9 @@ header {
 }
 
 #header-nav-list li {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: normal;
-  padding: 50px 0;
+  padding: 30px 0;
   color: #7a7a7a;
   /* font-family: 'Handlee', cursive; */
   /* border-bottom: 1px solid #7a7a7a; */ 
@@ -149,17 +149,6 @@ header {
   text-decoration: none;
   padding-bottom: 8px;
   position: relative;
-}
-
-#header-nav-list li a:before {
-  position: absolute;
-  bottom: 0px;
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 1px;
-  content: '';
-  border-radius: 1px;
-  background-color: #7a7a7a;
 }
 
 #header-mordal .sns-icon .fab,
@@ -210,10 +199,11 @@ header {
 }
 
 .page-main-message {
-  padding: 150px 70px;
+  height: 700px;
+  padding: 300px 0;
   position: relative;
   /* width: 50%; */
-  margin: 0 auto;
+  margin: auto;
 }
 
 .page-main-message p {
@@ -226,8 +216,8 @@ header {
 .page-main-message img {
   height: 80px;
   position: absolute;
-  right: calc(35%);
-  bottom: 40px;
+  right: calc(38%);
+  bottom: 200px;
 }
 
 .container {
@@ -238,7 +228,7 @@ header {
 
 .section-title {
   margin-top: 150px;
-  padding: 40px 0 40px 50px;
+  padding: 40px 0 80px 50px;
   /* text-align: left; */
   display: flex;
   align-items: flex-end;
@@ -266,9 +256,13 @@ header {
   margin: 25px 0;
 }
 
+.container-title h3 {
+  padding-bottom: 5px;
+}
+
 .about-title h4 {
   font-style: normal;
-  margin: 20px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .about-title img {
@@ -278,8 +272,8 @@ header {
 
 .works-txt,
 .about-txt {
-  padding: 30px 20px 20px 50px;
-  width: 45%;
+  padding: 0 0 20px 50px;
+  width: 50%;
   margin: 0 auto;
   text-align: left;
 }
@@ -346,6 +340,10 @@ header {
   padding: 5px 0 30px 0;
 }
 
+.works-list p {
+  margin-bottom: 20px;
+}
+
 .profile-content img {
   margin: 30px 20px;
 }
@@ -390,9 +388,9 @@ header {
 
 .img-slider-area .slick-slide img {
   width: auto;
-  height: 300px;
+  height: 350px;
 }
-
+/* 
 .page-slider-area {
   width: 100%;
   margin: auto;
@@ -402,7 +400,7 @@ header {
 
 .page-slider-area .slick-slide img {
   width: 100%;
-}
+} */
 
 .slick-prev,
 .slick-next {
@@ -460,7 +458,9 @@ header {
   grid-template-rows: 180px 180px 180px;
   grid-gap: 5px;
   padding: 5px;
+  align-items: center;
   justify-content: center;
+  padding: 80px 0;
 }
 
 #about-gallery .grid-item1 {
@@ -565,9 +565,8 @@ footer {
   width: 100%;
   text-align: center;
   /* background-color: rgb(239, 239, 240); */
-  margin-top: 60px;
+  margin-top: 150px;
   padding: 30px 0;
-  background-color: #ccc;
   color: #4a4a4a;
 }
 
